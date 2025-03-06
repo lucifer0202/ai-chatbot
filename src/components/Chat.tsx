@@ -46,7 +46,7 @@ export default function Chat() {
       <div className="mt-4 flex gap-2">
         <Input
           value={input}
-          onChange={(e) => setInput(e.target.value)}
+          onChange={(e: any) => setInput(e.target.value)}
           placeholder="Type a message..."
         />
         <Button onClick={sendMessage}>Send</Button>
