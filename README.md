@@ -34,3 +34,43 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📦 ai-chatbot
+├── 📂 app
+│ ├── 📂 api
+│ │ ├── 📂 auth
+│ │ │ └── 📜 [...nextauth]/route.ts # NextAuth authentication API
+│ │ ├── 📂 chat
+│ │ │ └── 📜 route.ts # Chat API to handle OpenAI requests
+│ ├── 📂 dashboard
+│ │ ├── 📜 page.tsx # User dashboard (chat history)
+│ ├── 📜 layout.tsx # Global layout with authentication provider
+│ ├── 📜 page.tsx # Home page (chat interface)
+│ ├── 📜 globals.css # Global styles
+│
+├── 📂 components
+│ ├── 📜 Chat.tsx # Chat UI component
+│ ├── 📜 Navbar.tsx # Top navigation bar
+│ ├── 📜 LoginButton.tsx # Sign in/out button
+│
+├── 📂 lib
+│ ├── 📜 prisma.ts # Prisma client for database access
+│ ├── 📜 mongodb.ts # MongoDB connection handler
+│
+├── 📂 prisma
+│ ├── 📜 schema.prisma # Database schema for chat messages
+│
+├── 📂 public
+│ ├── 📜 favicon.ico # App icon
+│
+├── 📂 styles
+│ ├── 📜 globals.css # Custom styles
+│
+├── 📂 utils
+│ ├── 📜 auth.ts # Authentication utilities
+│
+├── 📜 .env.local # API keys and database credentials
+├── 📜 next.config.js # Next.js configuration
+├── 📜 tailwind.config.js # Tailwind configuration
+├── 📜 tsconfig.json # TypeScript configuration
+├── 📜 package.json # Dependencies
+├── 📜 README.md # Project documentation
